@@ -27,12 +27,13 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Task Master</h1>
       <TodoForm addTodo={addTodo} />
       <TodoList state={state} handleComplete={handleComplete} />
-      <button onClick={(event) => {
+      <button className="clearBtn" onClick={(event) => {
         event.preventDefault()
         clearCompleted()
-      }}>Clear Task</button>
+      }}>Clear</button>
     </div>
   );
 }

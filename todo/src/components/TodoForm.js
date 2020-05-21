@@ -10,7 +10,7 @@ export function TodoForm (props) {
         setForm('')
     }}>
 
-        <input 
+        <input className="input"
             name='todo'
             placeholder='Add Todo'
             value={form}
@@ -19,7 +19,7 @@ export function TodoForm (props) {
             }}
         />
 
-        <button type='submit'>Add Todo</button>
+        <button className="submitBtn" type='submit'>Add</button>
     </form>
    )
 }
