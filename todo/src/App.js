@@ -7,6 +7,7 @@ import "./styles.css";
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
   console.log(state)
+  
   const addTodo = (input) => {
     const newTodo = {
       todo: input,
